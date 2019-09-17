@@ -1,0 +1,328 @@
+@mixin centered-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.guests-container {
+  background: #f5f5f5;
+  height: 57.5em;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.guests-icon {
+  align-items: center;
+  display: flex;
+  flex: 1.2;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 2em;
+
+  & .guests-img {
+    width: 6em;
+    height: 7em;
+  }
+
+  & .guests-label {
+    color: 4285F4;
+    font-family: Lato;
+    font-size: 2.3em;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.11;
+    letter-spacing: normal;
+    text-transform: uppercase;
+  }
+}
+
+.guest-person-info {
+  align-items: center;
+  display: flex;
+  flex: 3;
+  justify-content: space-around;
+
+  & .person-arrow-container {
+    @include centered-flex;
+    flex: 0.8;
+  }
+
+  & .person-avatar-container {
+    @include centered-flex;
+    flex: 1;
+    justify-content: center;
+    @media screen and (max-width: 1250px) {
+      justify-content: flex-start;
+    }
+  }
+
+  & .person-info-container {
+    align-items: center;
+    flex: 1;
+    & .person-container-wrapper {
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+      height: 72%;
+      align-items: flex-start;
+      color: #3f425a;
+
+      @media screen and (max-width: 730px){
+        height: 80%;
+      }
+      @media screen and (max-width: 650px){
+        height: 90%;
+      }
+      @media screen and (max-width: 610px){
+        height: 100%;
+      }
+    }
+  }
+  & .person-avatar {
+    width: 23.6em;
+    height: 26.6em;
+  }
+
+
+  & .person-arrow  {
+    height: 4em;
+    width: 3.4em;
+    &:hover  {
+      cursor: pointer;
+    }
+  }
+
+  & .person-talk {
+    color: #3f425a;
+    font-size: 3.2em;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 0.5em;
+  }
+
+  & .person-info {
+    & .person-name {
+      font-size: 2.4em;
+      margin-bottom: 0.5em
+    }
+    & .person-company {
+      font-size: 1.6em;
+    }
+  }
+}
+
+.guest-carousel-info {
+  align-items: flex-end;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  & .carousel-wrapper {
+    align-items: center;
+    display: inline-flex;
+    height: 15px;
+    & .carousel-item {
+      background: #b8b8b8;
+      border-radius: 50%;
+      height: 10px;
+      margin-right: 10px;
+      width: 10px;
+      transition: all .5s ;
+      &--active {
+        background: 4285F4;
+        height: 100%;
+        width: 15px;
+      }
+    }
+  }
+}
+
+.guest-carousel-slideable {
+  display: flex;
+  flex: 4;
+  overflow: hidden;
+  & .person-slideable {
+    display: flex;
+    width: 0;
+    height: 0;
+    transform: translateX(-100%);
+    transition: transform 1.5s ease;
+    & > * {
+      display: none;
+    }
+    &--active {
+      width: 100%;
+      height: auto;
+      transform: translateX(0);
+      & > * {
+        display: flex;
+      }
+    }
+  }
+}
+
+.no-button-style {
+  border: none;
+  background: transparent;
+}
+
+
+@media screen and (max-width: 500px) {
+  .guests-container {
+    font-size: 13.5px!important;
+    height: 750px!important;
+  }
+  .guests-icon .guests-label {
+    font-size: 2.5em;
+  }
+
+  .guest-person-info .person-avatar {
+    width: 17em;
+    height: 19em;
+  }
+
+  .guest-person-info .person-talk {
+    font-size: 2.6em;
+  }
+
+  .guest-person-info .person-info .person-name {
+    font-size: 1.7em;
+  }
+
+  .guest-person-info .person-info .person-company {
+    font-size: 1.3em;
+  }
+
+  .guest-carousel-slideable .person-avatar-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .guest-person-info .person-info-container .person-container-wrapper {
+    align-items: center;
+    .person-talk, .person-company, .person-name {
+      text-align: center;
+    }
+  }
+  .guest-person-info .person-talk {
+    margin-bottom: 0;
+  }
+
+
+  .guests {
+    &-container {
+      height: 580px;
+      padding: 30px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    &-icon {
+      flex: 1;
+      margin-bottom: 1em;
+    }
+  }
+  .guest {
+    &-person-info {
+      .person-arrow-container {
+        display: none;
+      }
+      .person-avatar-container {
+        flex: 1.2;
+        display: flex;
+        justify-content: center;
+      }
+      .person-info-container {
+        display: flex;
+        justify-content: center;
+      }
+      .person-info-container {
+        flex: 0.8;
+      }
+      .person-talk {
+        flex: 1;
+      }
+      .person-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+    }
+    &-carousel-info {
+      flex: 0.2;
+    }
+    &-carousel-slideable {
+      height: 100%;
+    }
+  }
+  .person {
+    &-slideable {
+      flex-direction: column;
+    }
+    &-container-wrapper {
+      height: 100%;
+    }
+    &-info-container {
+      flex: 1
+    }
+  }
+}
+
+@media screen and (min-width: 1115px) {
+  .guests-container {
+    font-size: 14.5px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .guests-container {
+    font-size: 12.5px;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  .guests-container {
+    font-size: 10.5px;
+    padding-top: 40px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .guests-container {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .guests-container {
+    font-size: 7.8px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .guests-container {
+    font-size: 7px;
+  }
+}
+
+
+
+@media screen and (max-width: 330px) {
+  .guests-container {
+    height: 62em;
+  }
+  .guests-icon .guests-label {
+    font-size: 2.3em;
+  }
+  .guest-person-info .person-avatar-container {
+    flex: 0.8;
+  }
+  .guest-person-info .person-info-container {
+    flex: 0.5;
+  }
+  .guest-person-info .person-container-wrapper {
+    font-size: 0.97em;
+  }
+}

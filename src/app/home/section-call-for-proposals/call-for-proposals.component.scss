@@ -1,0 +1,47 @@
+@import '../../../scss/imports';
+
+.call-for-proposals-component {
+    background-color: $atlantis;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 1em;
+
+    &--question {
+        text-align: center;
+        font-family: Lato;
+        font-size: em(22, 14);
+        font-weight: 900;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.11;
+        letter-spacing: normal;
+    }
+
+    &--link {
+        font-family: Lato;
+        display: inline-block;
+        background-color: $gun-powder;
+        text-align: center;
+        font-size: em(17, 14);
+        padding: 6px 45px;
+        border-radius: 5px;
+        margin-top: 1em;
+        &,
+        &:active,
+        &:focus,
+        &:visited {
+            color: white;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        &--link {
+            font-size: em(20, 14);
+        }
+    }
+
+}

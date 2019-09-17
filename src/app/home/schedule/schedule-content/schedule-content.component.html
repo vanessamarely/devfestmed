@@ -1,0 +1,13 @@
+<div
+    role="tabpanel"
+    id="{{ content.day }}-tab"
+    [attr.aria-labelledby]="content.day"
+    class="jw-schedule-content"
+>
+    <time class="jw-schedule-content__date c-sushi heading-lg" appLocalize [appLocalizeValue]="content.date"></time>
+
+    <app-schedule-event
+        *ngFor="let event of content.events"
+        [event]="event"
+    ></app-schedule-event>
+</div>

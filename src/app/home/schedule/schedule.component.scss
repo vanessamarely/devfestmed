@@ -1,0 +1,97 @@
+@import '../../../scss/imports';
+
+.jw-schedule {
+    &__header {
+        height: 373px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(
+                0deg,
+                rgba(121, 166, 54, 0.8),
+                rgba(121, 166, 54, 0.8)
+            ),
+            url('../../../assets/img/agenda.png') no-repeat;
+        background-position: center center;
+        background-size: cover;
+        @media screen and (max-width: 730px) {
+            height: 100px;
+            flex-direction: row;
+            padding: 0 26px;
+            justify-content: flex-start;
+            img {
+                height: 44px;
+                width: 44px;
+            }
+        }
+        h2 {
+            color: $gun-powder;
+            font-size: 36px;
+            font-weight: 900;
+            line-height: 1.1;
+            @media screen and (max-width: 730px) {
+                font-size: 24px;
+                padding-left: 15px;
+            }
+        }
+    }
+    &__tabs {
+        background: $wild-sand;
+        [role='tab'] {
+            color: inherit;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            border: 0;
+            background: inherit;
+            overflow: visible;
+            font-family: inherit;
+            font-size: inherit;
+            font-weight: 900;
+            text-transform: uppercase;
+            width: 244px;
+            max-width: 20%;
+            height: 90px;
+            &:hover,
+            &:focus,
+            &:active {
+                outline: 0;
+                color: inherit;
+            }
+            @media screen and (max-width: 730px) {
+                height: 60px;
+                span.noMobile {
+                    display: none;
+                }
+            }
+            &[aria-selected='true'] {
+                @media screen and (max-width: 730px) {
+                    background: $sushi;
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    height: 12px;
+                    background: $sushi;
+                    width: 100%;
+                }
+            }
+        }
+        div[role='tablist'] {
+            display: flex;
+            justify-content: center;
+            background: $gun-powder;
+            color: white;
+            font-size: 24px;
+            @media screen and (max-width: 730px) {
+                font-size: 18px;
+            }
+        }
+    }
+}

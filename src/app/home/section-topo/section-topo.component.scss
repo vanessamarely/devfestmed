@@ -1,0 +1,181 @@
+
+$turtle-green: #4285F4;
+
+.section-top-component {
+    position: relative;
+    height: 87em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-height: 668px;
+
+    .main-bar {
+      background: $turtle-green;
+      flex: 0.55;
+      max-height: 40px;
+    }
+    .main-top {
+        flex: 10;
+        display: flex;
+        background-image:
+                    linear-gradient(rgba(63, 66, 90, 0.85),  rgba(63, 66, 90, 0.85)),
+                    url(/assets/img/back-top.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        justify-content: center;
+
+        &-container {
+          display: flex;
+          align-items: center;
+          max-width: 1160px;
+          width: 100%;
+        }
+
+        .main-subject {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex: 1;
+          &-img {
+            height: 43em;
+            width: 69em;
+            height: 50em;
+            width: 77em;
+            @media (max-width: 1050px) {
+              height: 35em;
+              width: 45em;
+            }
+            @media (max-width: 750px) {
+              height: 78em;
+              width: 30em;
+            }
+          }
+        }
+
+        .main-details {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          flex: 1;
+          height: 80%;
+
+          .main-details-date-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          &-bottom {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+          }
+
+          &-date {
+            color: white;
+            font-size: 7.5em;
+            margin: 0;
+            text-align: center;
+            @media (max-width: 1050px) {
+              font-size: 6em;
+            }
+
+              & .date {
+                &-range {
+                  line-height: 1.6em;
+                  &-number {
+                    font-weight: 800;
+                  }
+                }
+                &-range, &-month {
+                  display: inline-block;
+                  min-width: 100%;
+                }
+              }
+          }
+
+          &-register {
+            flex: 1.6;
+            display: flex;
+            align-items: center;
+            &-button {
+              background-color: #4285F4;
+              font-size: 24px;
+              padding: 6px 8px 10px;
+              border-radius: 5px;
+              a {
+                  color: white;
+              }
+            }
+          }
+
+          &-conduct {
+            flex: .9;
+            .conduct-link {
+              color: #4285F4;
+              font-size: 2.8em;
+              text-decoration: underline;
+            }
+          }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+  .section-top-component {
+    height: 26em;
+    max-height: 478px;
+    .main-bar {
+      display: none;
+    }
+    .main-top {
+      padding: 0;
+    }
+    .main-top-container {
+      font-size: 11px;
+      flex-direction: column;
+      .main-details {
+        align-items: center;
+        flex: 2.5;
+        &-date {
+          font-size: 2em;
+        }
+        &-register-button {
+          padding: 7px 4px 10px;
+        }
+        &-register-button a {
+          font-size: .9em;
+        }
+        &-bottom {
+          flex: 1.6;
+        }
+        .conduct-link {
+          font-size: 1.3em;
+        }
+      }
+      .main-subject {
+        flex: 1.8;
+        &-img {
+          height: 13em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 651px) {
+  .section-top-component {
+    font-size: 8px;
+  }
+}
+
+
+@media screen and (min-width: 551px) {
+  .section-top-component {
+    font-size: 7px;
+  }
+}

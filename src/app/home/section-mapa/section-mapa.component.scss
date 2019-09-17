@@ -1,0 +1,102 @@
+@import '../../../scss/imports';
+
+.section-mapa-component {
+    @extend %cover;
+    @extend %flex-center-center;
+    //background-image: url(./../../../assets/img/mapa.jpg);
+    height: 65vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.95);
+    @media screen and (max-width: 730px) {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .area {
+        width: 95%;
+        max-width: 85%;
+
+        .box {
+            width: 40%;
+            padding: 2.5em;
+            background-color: rgba(255, 255, 255, 1);
+
+            h4 {
+                @extend %flex-center-left;
+                //margin: 0 0 1em;
+                color: $gun-powder;
+                font: {
+                    size: 36px;
+                    weight: 900;
+                }
+            }
+
+            p {
+                @extend %flex-center-left;
+                color: $gun-powder;
+                font: {
+                    size: 24px;
+                    weight: normal;
+                }
+                margin: 1em 0 0;
+
+                i {
+                    margin-right: 0.3em;
+                }
+            }
+        }
+
+        .vazio {
+            width: 60%;
+        }
+    }
+}
+
+@media screen and (max-width: 1288px) {
+    .section-mapa-component {
+        .area {
+            .box,
+            .vazio {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .section-mapa-component {
+        height: 45vh;
+
+        .area {
+            .box {
+                width: 60%;
+            }
+            .vazio {
+                width: 40%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .section-mapa-component {
+        .area {
+            .box {
+                font-size: 0.8em;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .section-mapa-component {
+        height: 40vh;
+
+        .area {
+            .box {
+                font-size: 0.6em;
+            }
+        }
+    }
+}

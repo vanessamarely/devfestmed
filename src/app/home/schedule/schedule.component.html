@@ -1,0 +1,32 @@
+<div class="jw-schedule jw-section">
+    <div class="jw-schedule__header">
+        <img
+            src="../../../../assets/img/ic-title-agenda.svg"
+            alt="Agenda Icon"
+        />
+        <h2 appLocalize>AGENDA</h2>
+    </div>
+
+    <div class="jw-schedule__tabs">
+        <div role="tablist" aria-label="Agenda">
+            <button
+                *ngFor="let day of objectKeys(schedule)"
+                id="{{ day }}"
+                (click)="selectedDay = day"
+                role="tab"
+                attr.aria-controls="{{ day }}-tab"
+                [attr.aria-selected]="selectedDay === day"
+            >
+                <span appLocalize>
+                {{ day.slice(0, 3) }}
+                </span>
+                <span class='noMobile' appLocalize>
+                    {{ day.slice(3, day.length) }}
+                </span>
+            </button>
+        </div>
+        <app-schedule-content
+            [content]="schedule[selectedDay]"
+        ></app-schedule-content>
+    </div>
+</div>

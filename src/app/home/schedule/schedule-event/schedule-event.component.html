@@ -1,0 +1,21 @@
+<div class="jw-schedule-event">
+    <time
+        class="jw-schedule-event__date heading-lg c-sushi"
+        [class.c-silver]="event.type === 'break'"
+        appLocalize
+    >
+        {{ event.date }}
+    </time>
+    <div class="jw-schedule-event__info">
+        <h3
+            class="c-gun-powder"
+            [ngClass]="{ 'c-silver heading-lg': event.type === 'break' }"
+            appLocalize
+        >
+            {{ event.title }}
+        </h3>
+        <h4 class="c-gun-powder" *ngIf="event.subtitle">
+            {{ event.subtitle }}
+        </h4>
+    </div>
+</div>

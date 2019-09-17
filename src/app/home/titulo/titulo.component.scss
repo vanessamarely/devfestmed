@@ -1,0 +1,26 @@
+@import '../../../scss/imports';
+
+.titulo-component {
+    padding-top: em(97);
+    padding-bottom: em(53);
+    text-align: center;
+
+    i {
+        font-size: 4em;
+        color: $turtle-green;
+    }
+
+    h3 {
+        font-family: Lato;
+        font-size: 36px;
+        font-weight: 900;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.11;
+        letter-spacing: normal;
+        text-align: center;
+        text-transform: uppercase;
+        color: $turtle-green;
+        margin: 0;
+    }
+}

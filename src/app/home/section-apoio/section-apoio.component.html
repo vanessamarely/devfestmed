@@ -1,0 +1,76 @@
+<div class="section-apoio-component">
+    <div class="section-wrapper bg-gray">
+        <div class="section-title">
+            <img
+                src="../../../assets/img/ic-title-sponsored.svg"
+                alt="Icono de un estrella"
+                class="section-title__icon"
+            />
+            <h3 class="section-title__text" appLocalize>
+                Patrocina
+            </h3>
+        </div>
+        <div class="section-content">
+            <div>
+                <a
+                    class="globant-logo"
+                    href="https://www.yuxiglobal.com/home"
+                    target="_blank"
+                    title="Yuxi Global"
+                    ><img src="/assets/img/yuxi.png" alt="Yuxi Global"
+                /></a>
+            </div>
+        </div>
+    </div>
+    <div class="section-wrapper">
+        <div class="section-title">
+            <img
+                src="../../../assets/img/ic-title-communities.svg"
+                alt="Icono de un un grupo de personas"
+                class="section-title__icon"
+            />
+            <h3 class="section-title__text" appLocalize>
+                Comunidades - Partners
+            </h3>
+        </div>
+        <div class="section-content">
+            <div class="jw-communities">
+                <a
+                    href="https://www.meetup.com/Angular-Medellin/"
+                    target="_blank"
+                    title="Angular Medellin"
+                >
+                    <img
+                        class="sponsorImg"
+                        src="/assets/img/communities/angularmed.jpeg"
+                        alt="Angular Medellin"
+                    />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="section-wrapper">
+        <div class="section-title">
+            <img
+                src="../../../assets/img/ic-title-heros.svg"
+                alt="Icono de cohetes"
+                class="section-title__icon"
+            />
+            <h3 class="section-title__text" appLocalize>Voluntarios</h3>
+        </div>
+        <div class="section-content">
+            <div class="jw-volunteers">
+                <picture class="jw-volunteer" *ngFor="let vol of voluntarios">
+                    <img
+                        class="jw-volunteer__photo"
+                        src="{{ vol.picture }}"
+                        alt="Foto de {{ vol.name }}"
+                    />
+                    <span class="jw-volunteer__name">
+                        {{ vol.name }}
+                    </span>
+                </picture>
+            </div>
+        </div>
+    </div>
+</div>

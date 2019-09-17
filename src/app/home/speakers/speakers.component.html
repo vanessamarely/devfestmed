@@ -1,0 +1,10 @@
+<div class="jw-speakers">
+    <h2 class="jw-speakers__title c-sushi heading-lg">OTROS SPEAKERS</h2>
+    <div class="jw-speakers__grid">
+        <app-speaker
+            *ngFor="let speaker of speakers"
+            [speaker]="speaker"
+            (click)="selectedSpeaker = speaker"
+        ></app-speaker>
+    </div>
+</div>

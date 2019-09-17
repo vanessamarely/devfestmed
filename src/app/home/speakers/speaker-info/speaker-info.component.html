@@ -1,0 +1,18 @@
+<div class="jw-speaker-info">
+    <img
+        (click)="handleClose()"
+        class="jw-speaker-info__close-btn"
+        src="../../../assets/img/ic-close.svg"
+        alt="Close Icon"
+    />
+    <img
+        class="jw-speaker-info__picture"
+        [src]="speaker.picture"
+        [alt]="speaker.name"
+    />
+    <div class="jw-speaker-info__content">
+        <h2 class="c-sushi">{{ speaker.name }}</h2>
+        <!-- <h3 class="c-gun-powder">{{ speaker.title }}</h3> -->
+        <p class="c-gun-powder">{{ speaker.bio }}</p>
+    </div>
+</div>

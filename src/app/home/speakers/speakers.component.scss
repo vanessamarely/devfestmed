@@ -1,0 +1,30 @@
+@import '../../../scss/imports';
+
+.jw-speakers {
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    @media screen and (max-width: 730px) {
+        padding: 26px 26px 40px;
+    }
+    &__title {
+        margin: 0;
+        padding-bottom: 53px;
+        @media screen and (max-width: 730px) {
+            font-size: 24px;
+            align-self: flex-start;
+        }
+    }
+    &__grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 1260px;
+        justify-content: center;
+        align-items: center;
+    }
+}

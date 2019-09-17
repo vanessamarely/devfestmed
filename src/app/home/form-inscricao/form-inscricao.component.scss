@@ -1,0 +1,122 @@
+@import '../../../scss/imports';
+
+.form-inscricao-component {
+    @extend %flex-center-center;
+    @include align-items();
+    width: 95vw;
+    max-width: 750px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.6em;
+
+    input,
+    button {
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid cyan;
+        width: 33.33%;
+        padding: 0 0.5em;
+        margin: 0;
+        outline: none;
+        font: {
+            size: 1.2em;
+            weight: 300;
+        }
+        box-sizing: border-box;
+    }
+
+    button {
+        color: cyan;
+
+        &:hover {
+            background-color: cyan;
+            color: #333;
+        }
+    }
+
+    .email {
+        margin: 0 0.5em;
+    }
+}
+
+.modal {
+    .modal-content {
+        @extend %flex-center-center;
+        @include flex-dir(column);
+
+        h4 {
+            color: $verde;
+        }
+
+        .area {
+            @extend %flex-center-center;
+            @include flex-dir(column);
+            @include flex-grow(1);
+            width: 80%;
+
+            .btn-flat {
+                margin-bottom: 0.5em;
+                width: 80%;
+                min-height: 36px;
+            }
+        }
+    }
+}
+
+.survey {
+    .area {
+        .convite-pesquisa {
+            font: {
+                family: 'Lato', sans-serif;
+                size: 1.5em;
+                weight: 200;
+            }
+        }
+        .resposta {
+            width: 100%;
+        }
+        .row {
+            width: 100%;
+        }
+        .ifield {
+            width: 50%;
+        }
+
+        a {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 605px) {
+    .form-inscricao-component {
+        button {
+            span {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .form-inscricao-component {
+        @include flex-dir(column);
+
+        input,
+        button {
+            width: 100%;
+        }
+
+        button {
+            padding: 0.5em;
+            color: #333;
+            background-color: cyan;
+            span {
+                display: inline;
+            }
+        }
+
+        .email {
+            margin: 0.5em 0;
+        }
+    }
+}
