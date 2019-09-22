@@ -31,6 +31,7 @@
     width: 100%;
     max-width: 1160px;
     padding-top: 45px;
+
     @media screen and (max-width: 1050px) {
         padding-top: 0;
     }
@@ -54,6 +55,7 @@
     }
 
     &__name {
+        background-color: #00000066;
         color: white;
         text-align: center;
         position: absolute;
