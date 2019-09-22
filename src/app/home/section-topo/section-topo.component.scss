@@ -18,7 +18,7 @@ $turtle-green: #4285F4;
         flex: 10;
         display: flex;
         background-image:
-                    linear-gradient(rgba(63, 66, 90, 0.85),  rgba(63, 66, 90, 0.85)),
+                    linear-gradient(rgba(63, 66, 90, 0.75),  rgba(63, 66, 90, 0.75)),
                     url(/assets/img/back-top.png);
         background-size: cover;
         background-repeat: no-repeat;
@@ -116,7 +116,7 @@ $turtle-green: #4285F4;
           &-conduct {
             flex: .9;
             .conduct-link {
-              color: #4285F4;
+              color: white;
               font-size: 2.8em;
               text-decoration: underline;
             }

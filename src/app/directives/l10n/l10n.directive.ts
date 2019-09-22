@@ -12,14 +12,14 @@ import {
     selector: "[appLocalize]"
 })
 export class L10nDirective implements AfterViewInit, OnChanges {
-    private lang = "en";
+    private lang = "es";
     @Input() appLocalizeIf: string;
     @Input() appLocalizeValue: string;
 
     private dict = {};
 
     constructor(private element: ElementRef, private renderer: Renderer2) {
-        const lng = navigator.language.toLowerCase() || "en";
+        const lng = navigator.language.toLowerCase() || "es";
         const [lang, _] = lng.split("-");
         this.lang = this.dict[lang] ? lang : this.lang;
         if (!this.dict[lang]) {

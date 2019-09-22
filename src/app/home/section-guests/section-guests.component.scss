@@ -27,7 +27,7 @@
   }
 
   & .guests-label {
-    color: 4285F4;
+    color: #4285F4;
     font-family: Lato;
     font-size: 2.3em;
     font-weight: 900;
@@ -108,8 +108,19 @@
       font-size: 2.4em;
       margin-bottom: 0.5em
     }
-    & .person-company {
+    & .person-title {
       font-size: 1.6em;
+    }
+    & .person-social {
+      font-size: 1.4em;
+      .social-link {
+        display: flex;
+        flex-direction: row;
+        .social-img {
+          width: 3em;
+          height: 3em;
+        }
+      }
     }
   }
 }
@@ -131,7 +142,7 @@
       width: 10px;
       transition: all .5s ;
       &--active {
-        background: 4285F4;
+        background: #4285F4;
         height: 100%;
         width: 15px;
       }

@@ -6,5 +6,29 @@
         color: #b8b8b8;
         font-size: 1em;
         margin: 15px 0;
+        a {
+            color: #3f425a;
+            font-size: 1.2em;
+            text-decoration: underline;
+        }
+        .social {
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            li {
+                align-self: flex-start;
+                margin-top: 1em;
+            }
+        }
+    }
+    .about{
+        padding: 1em;
+        text-align: center;
+        font-size: 1em;
+        color: #3f425a;
+        p {
+            font-size: 1.4em;
+        }
     }
 }

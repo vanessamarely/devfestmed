@@ -18,7 +18,8 @@ export class SectionGuestsComponent implements OnInit {
                 image: 'assets/img/guests/luis-aviles.jpg',
                 talk: 'Angular AI',
                 name: 'Luis Aviles',
-                Company: 'GDE Angular',
+                title: 'GDE Angular',
+                social: '@luixaviles'
             },
         ];
         this.imageIndex = 0;
