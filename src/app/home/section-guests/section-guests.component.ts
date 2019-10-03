@@ -15,12 +15,26 @@ export class SectionGuestsComponent implements OnInit {
     ngOnInit() {
         this.guests = [
             {
-                image: 'assets/img/guests/luis-aviles.jpg',
-                talk: 'Angular AI',
+                image: 'assets/img/guests/luis-aviles.png',
+                talk: 'Uniendo fuerzas: Angular + AI',
                 name: 'Luis Aviles',
-                title: 'GDE Angular',
+                title: 'Google Developer Expert en Tecnologías Web y Angular',
                 social: '@luixaviles'
             },
+            {
+                image: 'assets/img/guests/Adriana_Fernanda_Moya.jpg',
+                talk: 'Diseñando mejores APIs con OpenAPI y Google Cloud Endpoints',
+                name: 'Adriana Fernanda Moya',
+                title: 'Google Developer Expert Google Cloud Platform',
+                social: '@adriifermo'
+            },
+            {
+                image: 'assets/img/guests/Grant_Timmerman.jpg',
+                talk: 'Building Massively Asynchronous Serverless Applications',
+                name: 'Grant Timmerman',
+                title: 'Developer platform engineer at Google',
+                social: '@granttimmerman'
+            }
         ];
         this.imageIndex = 0;
     }
