@@ -34,6 +34,13 @@ export class SectionGuestsComponent implements OnInit {
                 name: 'Grant Timmerman',
                 title: 'Developer platform engineer at Google',
                 social: '@granttimmerman'
+            },
+            {
+                image: 'assets/img/guests/bram.jpeg',
+                talk: 'Type safety from front to back with GraphQL and Angular',
+                name: 'Bram Borggreve',
+                title: 'Software engineer, author and mentor.',
+                social: '@beeman_nl'
             }
         ];
         this.imageIndex = 0;
