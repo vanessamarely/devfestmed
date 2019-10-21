@@ -52,7 +52,7 @@ export class ScheduleComponent implements OnInit {
                     {
                         type: 'talk',
                         title:
-                            'PR en la era de las startups',
+                            'PR en la era de las Startups',
                         subtitle: 'Ximena orjuela',
                         date: '10:20 AM',
                     },
@@ -127,7 +127,7 @@ export class ScheduleComponent implements OnInit {
                         type: 'talk',
                         title:
                             'Let\'s talk about State Management in Flutter',
-                        subtitle: 'Adrian Catalan',
+                        subtitle: 'Diego Velasquez Lopez',
                         date: '15:45 PM',
                     },
                     {
