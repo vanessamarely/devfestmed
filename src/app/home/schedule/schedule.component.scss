@@ -2,19 +2,15 @@
 
 .jw-schedule {
     &__header {
-        height: 373px;
+        height: 200px;
         text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background: linear-gradient(
-                0deg,
-                rgba(121, 166, 54, 0.8),
-                rgba(121, 166, 54, 0.8)
-            ),
-            url('../../../assets/img/agenda.png') no-repeat;
-        background-position: center center;
+        background: linear-gradient(rgba(63, 66, 90, 0.75), rgba(63, 66, 90, 0.75)), 
+            url('../../../assets/img/back-top.png') no-repeat;
+        background-position: top;
         background-size: cover;
         @media screen and (max-width: 730px) {
             height: 100px;

@@ -7,168 +7,15 @@ import { Component, OnInit, HostListener } from '@angular/core';
 })
 export class ScheduleComponent implements OnInit {
     schedule: any = {};
-    selectedDay = 'martes';
+    selectedDay = 'sabado';
     objectKeys = Object.keys;
     constructor() {}
 
     ngOnInit() {
         this.schedule = {
-            martes: {
-                day: 'martes',
-                date: '20 de agosto',
-                events: [
-                    {
-                        type: 'talk',
-                        title: 'Registro de asistentes',
-                        subtitle: '',
-                        date: '5:45 PM',
-                    },
-                    {
-                        type: 'talk',
-                        title: 'Bienvenida',
-                        subtitle: '',
-                        date: '6:30 PM',
-                    },
-                    {
-                        type: 'talk',
-                        title: 'Keynote: Why enterprises embrace Node.js',
-                        subtitle: 'Serge Josipovic',
-                        date: '7:00 PM',
-                    },
-                    {
-                        type: 'break',
-                        title: 'BREAK',
-                        date: '7:30 PM',
-                    },
-                    {
-                        type: 'talk',
-                        title: 'Detangling multithreading in Node.js',
-                        subtitle: 'Adrián Estrada',
-                        date: '8:00 PM',
-                    },
-                    {
-                        type: 'talk',
-                        title: 'Yo no quiero hacer eso (a mano)',
-                        subtitle: 'Olga Saucedo',
-                        date: '8:30 PM',
-                    },
-                ],
-            },
-            miercoles: {
-                day: 'miercoles',
-                date: '21 de agosto',
-                events: [
-                    {
-                        type: 'talk',
-                        title: 'Registro de asistentes',
-                        subtitle: '',
-                        date: '5:45 PM',
-                    },
-                    {
-                        type: 'talk',
-                        title: 'Node Projects @ Scale',
-                        subtitle: 'Rob Howard & Pete McKinstry',
-                        date: '6:30 PM',
-                    },
-                    {
-                        type: 'break',
-                        title: 'BREAK',
-                        date: '7:00 PM',
-                    },
-                    {
-                        type: 'talk',
-                        title: 'Entendiendo Protocol Buffers y GRPC con Node',
-                        subtitle: 'Diego Botia',
-                        date: '7:30 PM',
-                    },
-                    {
-                        type: 'talk',
-                        title: 'Que es el CSS Crítico y como calcularlo',
-                        subtitle: 'Julián Lamprea',
-                        date: '8:00 PM',
-                    },
-                ],
-            },
-            jueves: {
-                day: 'jueves',
-                date: '22 de agosto',
-                events: [
-                    {
-                        type: 'talk',
-                        title: 'Registro de asistentes',
-                        subtitle: '',
-                        date: '5:45 PM',
-                    },
-                    {
-                        type: 'talk',
-                        title: 'Native NodeJS Modules with Rust and WASM',
-                        subtitle: 'Alex Ramírez',
-                        date: '6:30 PM',
-                    },
-                    {
-                        type: 'break',
-                        title: 'BREAK',
-                        date: '7:00 PM',
-                    },
-                    {
-                        type: 'talk',
-                        title: 'Controlling the world with Node',
-                        subtitle: 'Kevin Fonner',
-                        date: '7:30 PM',
-                    },
-                    {
-                        type: 'talk',
-                        title: 'Deno, una alternativa a Node.js',
-                        subtitle: 'Óscar Granada',
-                        date: '8:00 PM',
-                    },
-                ],
-            },
-            viernes: {
-                day: 'viernes',
-                date: '23 de agosto',
-                events: [
-                    {
-                        type: 'talk',
-                        title: 'Registro de asistentes',
-                        subtitle: '',
-                        date: '5:45 PM',
-                    },
-                    {
-                        type: 'talk',
-                        title: 'Querido Diario: Hoy conocí a Node',
-                        subtitle: 'Ana Sosa',
-                        date: '6:30 PM',
-                    },
-                    {
-                        type: 'break',
-                        title: 'BREAK',
-                        date: '7:00 PM',
-                    },
-                    {
-                        type: 'talk',
-                        title:
-                            'Buenas prácticas para manejar la arquitectura de tu código',
-                        subtitle: 'David Montoya',
-                        date: '7:30 PM',
-                    },
-                    {
-                        type: 'talk',
-                        title: 'Special guest talk',
-                        subtitle: '',
-                        date: '8:00 PM',
-                    },
-                    {
-                        type: 'break',
-                        title: 'After y 🍻',
-                        subtitle: '',
-                        date: '8:30 PM',
-                    },
-                ],
-            },
             sabado: {
                 day: 'sabado',
-                date: '24 de agosto',
+                date: 'Noviembre 16',
                 events: [
                     {
                         type: 'talk',
@@ -179,17 +26,149 @@ export class ScheduleComponent implements OnInit {
                     {
                         type: 'talk',
                         title:
-                            'Workshop: Plataforma de inteligencia aumentada para el mejoramiento de la sostenibilidad de cultivos agrícolas',
-                        subtitle: 'Alejandro Peña & Team',
-                        date: '8:30 AM',
+                            'DevFest introduction',
+                        date: '9:00 AM',
                     },
                     {
                         type: 'talk',
                         title:
-                            'Workshop: Serverless con NodeJS y lo magnífico de no preocuparse por escalabilidad',
-                        subtitle: 'Camilo Montoya',
-                        date: '8:30 AM',
+                            'Sponsors presentation',
+                        date: '9:10 AM',
                     },
+                    {
+                        type: 'talk',
+                        title:
+                            'Uniendo fuerzas: Angular + AI',
+                        subtitle: 'Luis Aviles',
+                        date: '9:30 AM',
+                    },
+                    {
+                        type: 'talk',
+                        title:
+                            'Las formas de desplegar web apps en google cloud platform, gratuitas y de pago',
+                        subtitle: 'Felipe Lujan',
+                        date: '10:00 AM',
+                    },
+                    {
+                        type: 'talk',
+                        title:
+                            'PR en la era de las startups',
+                        subtitle: 'Ximena orjuela',
+                        date: '10:20 AM',
+                    },
+                    {
+                        type: 'break',
+                        title:
+                            'Break & Networking',
+                        date: '10:50 AM',
+                    },
+                    {
+                        type: 'talk',
+                        title:
+                            'Building Massively Asynchronous Serverless Applications',
+                        subtitle: 'Grant Timmerman',
+                        date: '11:10 AM',
+                    },
+                    {
+                        type: 'talk',
+                        title:
+                            'Automatizar tareas usando google scripting',
+                        subtitle: 'Andrés Bedoya',
+                        date: '11:40 AM',
+                    },
+                    {
+                        type: 'talk',
+                        title:
+                            'Tú no conoces de lo que quieres, tu usuario sabe de lo que quiere: Android Dynamic Features',
+                        subtitle: 'Diego Ramírez Vásquez',
+                        date: '12:10 AM',
+                    },
+                    {
+                        type: 'break',
+                        title:
+                            'Free Lunch',
+                        date: '12:35 AM',
+                    },
+                    {
+                        type: 'talk',
+                        title:
+                            'DevFest presentation',
+                        date: '13:35 PM',
+                    },
+                    {
+                        type: 'talk',
+                        title:
+                            'Diseñando mejores APIs con OpenAPI y Google Cloud Endpoints',
+                        subtitle: 'Adriana Moya',
+                        date: '13:45 PM',
+                    },
+                    {
+                        type: 'talk',
+                        title:
+                            'Creando extensiones para Chrome',
+                        subtitle: 'Diego Castro',
+                        date: '14:15 PM',
+                    },
+                    {
+                        type: 'talk',
+                        title:
+                            'Swift for TensorFlow - The Next Generation platform for Deep Learning.',
+                        subtitle: 'Isabel Palomar',
+                        date: '14:45 PM',
+                    },
+                    {
+                        type: 'talk',
+                        title:
+                            'Hakuna matata: Koin, Koroutines & all the Kotlin love for Android',
+                        subtitle: 'Adrian Catalan',
+                        date: '15:15 PM',
+                    },
+                    {
+                        type: 'talk',
+                        title:
+                            'Let\'s talk about State Management in Flutter',
+                        subtitle: 'Adrian Catalan',
+                        date: '15:45 PM',
+                    },
+                    {
+                        type: 'break',
+                        title:
+                            'Break & Networking',
+                        date: '16:00 PM',
+                    },
+                    {
+                        type: 'talk',
+                        title:
+                            'Code like Google does with Nx',
+                        subtitle: 'Diego Juliao',
+                        date: '16:25 PM',
+                    },
+                    {
+                        type: 'talk',
+                        title:
+                            'Type safety from front to back with GraphQL and Angular',
+                        subtitle: 'Bram Borggreve',
+                        date: '16:45 PM',
+                    },
+                    {
+                        type: 'break',
+                        title:
+                            'Speaker Panel',
+                        subtitle: 'Time to ask anything to all our speakers',
+                        date: '17:15 PM',
+                    },
+                    {
+                        type: 'break',
+                        title:
+                            'Closing & Kahoot Time!!',
+                        date: '17:50 PM',
+                    },
+                    {
+                        type: 'break',
+                        title:
+                            'End of the event',
+                        date: '18:30 PM',
+                    }
                 ],
             },
         };

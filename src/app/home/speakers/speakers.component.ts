@@ -33,11 +33,53 @@ export class SpeakersComponent implements OnInit {
             {
                 name: 'Bram Borggreve',
                 picture: '../../../../assets/img/guests/bram.jpeg',
-                bio: `Software engineer, author and mentor.  Founder of Code Your Future Colombia
-                
-                
-                `,
+                bio: `Software engineer, author and mentor.  Founder of Code Your Future Colombia `,
             },
+            {
+                name: 'Felipe Lujan',
+                picture: '../../../../assets/img/guests/Felipe_Lujan.jpg',
+                bio: `Soy desarrollador front-end en globant, trabajo con angular y react y me gusta experimentar con tecnologías cloud como GCP y AWS. `,
+            },
+            {
+                name: 'Ximena Orjuela',
+                picture: '../../../../assets/img/guests/Ximena_Orjuela.jpg',
+                bio: `Publicista, Relacionista Publica, trabajando en PR con varios emprendimientos en la región.`,
+            },
+            {
+                name: 'Andrés Bedoya',
+                picture: '../../../../assets/img/guests/Andres_Bedoya.jpg',
+                bio: `Profesor de programación. Ingeniero informático, próximo diseñador gráfico y magister en Desarrollo de software.`,
+            },
+            {
+                name: 'Diego Ramírez Vásquez',
+                picture: '../../../../assets/img/guests/Diego_Ramirez_Vasquez.jpg',
+                bio: `Android Software Engineer at Wizeline. Diego started in Android development since 6 years ago and now he love learn and share everything he have learned.`,
+            },
+            {
+                name: 'Diego Castro',
+                picture: '../../../../assets/img/guests/Diego_Castro.jpg',
+                bio: `Senior Frontend developer at Globant. Passionated Frontend developer, always givings and learning more day after day.`,
+            },
+            {
+                name: 'Isabel Palomar',
+                picture: '../../../../assets/img/guests/Isabel_Palomar.jpg',
+                bio: `Software Engineer. Isabel Palomar is a Mexican Software engineer whose expertise covers back-end and Android development. She has co-organized several tech communities in Mexico and US such as GDG Guadalajara, Tech Women Community, WWCode Ciudad Guzmán and JUG PA, and participated as a mentor and teacher in educational platforms like CodePath and Edx.`,
+            },
+            {
+                name: 'Adrian Catalan',
+                picture: '../../../../assets/img/guests/Adrian_Catalan.jpg',
+                bio: `Innovation Lab Director. Adrián has been involved in software industry for 13+ years, working both in web and mobile apps. GDG Guatemala, GuatemalaJS and Nodebots former co-organizer. Currently he leads the Innovation Lab at Galileo University and is a Google Developer Expert(GDE) for Android, IoT and Firebase.`,
+            },
+            {
+                name: 'Diego Velasquez Lopez',
+                picture: '../../../../assets/img/guests/Diego_Velasquez_Lopez.jpg',
+                bio: `Google Developer Expert en Flutter/Dart , Arquitecto de Software Móvil en Aeyrium. Diego Velásquez es un Ingeniero de Software con más de 10 años de experiencia, enfocado en el desarrollo de apps móviles Android/iOS/Flutter.`,
+            },
+            {
+                name: 'Diego Juliao',
+                picture: '../../../../assets/img/guests/Diego_Juliao.jpg',
+                bio: `FullStack JavaScript Engineer. Software Engineer with 4+ years of professional experience focused on javascript technologies, passionate and committed with the quality of his work. With very solid knowledge about Javascript and Typescript.`,
+            }
         ];
     }
 }
