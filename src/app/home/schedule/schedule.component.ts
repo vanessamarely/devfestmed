@@ -81,13 +81,13 @@ export class ScheduleComponent implements OnInit {
                         title:
                             'Tú no conoces de lo que quieres, tu usuario sabe de lo que quiere: Android Dynamic Features',
                         subtitle: 'Diego Ramírez Vásquez',
-                        date: '12:10 AM',
+                        date: '12:10 PM',
                     },
                     {
                         type: 'break',
                         title:
                             'Free Lunch',
-                        date: '12:35 AM',
+                        date: '12:35 PM',
                     },
                     {
                         type: 'talk',

@@ -58,7 +58,7 @@ export class SpeakersComponent implements OnInit {
             {
                 name: 'Diego Castro',
                 picture: '../../../../assets/img/guests/Diego_Castro.jpg',
-                bio: `Senior Frontend developer at Globant. Passionated Frontend developer, always givings and learning more day after day.`,
+                bio: `Senior Frontend developer at Globant. Passionated Frontend developer, always giving and learning more day after day.`,
             },
             {
                 name: 'Isabel Palomar',
