@@ -86,7 +86,7 @@ export class ScheduleComponent implements OnInit {
                     {
                         type: 'break',
                         title:
-                            'Free Lunch',
+                            'Lunch',
                         date: '12:35 PM',
                     },
                     {
