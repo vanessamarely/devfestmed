@@ -66,11 +66,6 @@ export class SpeakersComponent implements OnInit {
                 bio: `Software Engineer. Isabel Palomar is a Mexican Software engineer whose expertise covers back-end and Android development. She has co-organized several tech communities in Mexico and US such as GDG Guadalajara, Tech Women Community, WWCode Ciudad Guzmán and JUG PA, and participated as a mentor and teacher in educational platforms like CodePath and Edx.`,
             },
             {
-                name: 'Adrian Catalan',
-                picture: '../../../../assets/img/guests/Adrian_Catalan.jpg',
-                bio: `Innovation Lab Director. Adrián has been involved in software industry for 13+ years, working both in web and mobile apps. GDG Guatemala, GuatemalaJS and Nodebots former co-organizer. Currently he leads the Innovation Lab at Galileo University and is a Google Developer Expert(GDE) for Android, IoT and Firebase.`,
-            },
-            {
                 name: 'Diego Velasquez Lopez',
                 picture: '../../../../assets/img/guests/Diego_Velasquez_Lopez.jpg',
                 bio: `Google Developer Expert en Flutter/Dart , Arquitecto de Software Móvil en Aeyrium. Diego Velásquez es un Ingeniero de Software con más de 10 años de experiencia, enfocado en el desarrollo de apps móviles Android/iOS/Flutter.`,

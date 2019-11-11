@@ -35,6 +35,26 @@ export class SectionApoioComponent implements OnInit {
             name: 'Maria Isabel Rincon',
             picture: '/assets/img/team/isabel.jpg',
         },
+        {
+            name: 'Gerlis Alvarez ',
+            picture: '/assets/img/team/gerlys.jpg',
+        },
+        {
+            name: 'Lina Maria Montaño',
+            picture: '/assets/img/team/lina.png',
+        },
+        {
+            name: 'Diego Alvarez',
+            picture: '/assets/img/team/diegoAlvarez.jpg',
+        },
+        {
+            name: 'Jhon Jairo Hernandez',
+            picture: '/assets/img/team/jhonJairo.jpg',
+        },
+        {
+            name: 'Brayan Hernandez',
+            picture: '/assets/img/team/brayan.jpg',
+        }
     ];
 
     constructor() {}

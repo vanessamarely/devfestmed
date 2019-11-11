@@ -93,48 +93,41 @@ export class ScheduleComponent implements OnInit {
                         type: 'talk',
                         title:
                             'DevFest presentation',
-                        date: '13:35 PM',
+                        date: '14:00 PM',
                     },
                     {
                         type: 'talk',
                         title:
                             'Diseñando mejores APIs con OpenAPI y Google Cloud Endpoints',
                         subtitle: 'Adriana Moya',
-                        date: '13:45 PM',
+                        date: '14:10 PM',
                     },
                     {
                         type: 'talk',
                         title:
                             'Creando extensiones para Chrome',
                         subtitle: 'Diego Castro',
-                        date: '14:15 PM',
+                        date: '14:40 PM',
                     },
                     {
                         type: 'talk',
                         title:
                             'Swift for TensorFlow - The Next Generation platform for Deep Learning.',
                         subtitle: 'Isabel Palomar',
-                        date: '14:45 PM',
-                    },
-                    {
-                        type: 'talk',
-                        title:
-                            'Hakuna matata: Koin, Koroutines & all the Kotlin love for Android',
-                        subtitle: 'Adrian Catalan',
-                        date: '15:15 PM',
+                        date: '15:10 PM',
                     },
                     {
                         type: 'talk',
                         title:
                             'Let\'s talk about State Management in Flutter',
                         subtitle: 'Diego Velasquez Lopez',
-                        date: '15:45 PM',
+                        date: '15:40 PM',
                     },
                     {
                         type: 'break',
                         title:
                             'Break & Networking',
-                        date: '16:00 PM',
+                        date: '15:55 PM',
                     },
                     {
                         type: 'talk',
